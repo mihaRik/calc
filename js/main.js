@@ -1,28 +1,19 @@
 let firstOperand = document.getElementById("firstOperand");
 let secondOperand = document.getElementById("secondOperand");
-let operation = document.getElementById("operation");
+let resultInput = document.getElementById("resultInput");
 
-function getOperands() {
-    firstOperand = firstOperand.value;
-    secondOperand = secondOperand.value;
-}
 function plus() {
-    getOperands();
-    result = firstOperand + secondOperand;
+    result = Number(firstOperand.value) + Number(secondOperand.value);
 }
 function minus() {
-    getOperands();
-    result = firstOperand - secondOperand;
+    result = Number(firstOperand.value) - Number(secondOperand.value);
 }
 function multi() {
-    getOperands();
-    result = firstOperand * secondOperand;
+    result = Number(firstOperand.value) * Number(secondOperand.value);
 }
 function divide() {
-    getOperands();
-    result = firstOperand / secondOperand;
+    result = Number(firstOperand.value) / Number(secondOperand.value);
 }
-
-function result() {
-    result = document.getElementById("result").value;
+function showResult() {
+    resultInput.value = result;
 }
