@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+    <title>Title</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4 my-5">
+                <label for="firstOperand">First operand</label>
+                <input id="firstOperand" class="form-control" type="number">
+                <label for="secondOperand">Second operand</label>
+                <input id="secondOperand" class="form-control" type="number">
+                <div class="btn-group w-100 justify-content-center my-2">
+                    <button class="btn btn-success w-25" onclick="plus()" id="plus" type="button">+</button>
+                    <button class="btn btn-success w-25" onclick="minus()" id="minus" type="button">-</button>
+                    <button class="btn btn-success w-25" onclick="multi()" id="multi" type="button">*</button>
+                    <button class="btn btn-success w-25" onclick="divide()" id="divide" type="button">/</button>
+                </div>
+                <label for="result">Result</label>
+                <input id="result" class="form-control" type="number">
+                <button class="btn btn-primary w-100 my-2" id="operation" type="button">=</button>                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
